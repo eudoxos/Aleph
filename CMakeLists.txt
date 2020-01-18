@@ -173,7 +173,8 @@ ENDIF()
 FIND_PACKAGE(PythonInterp 3)
 FIND_PACKAGE(PythonLibs   3)
 
-FIND_PACKAGE( tinyxml2 )
+# FIND_PACKAGE( tinyxml2 )
+PKG_CHECK_MODULES(tinyxml2 tinyxml2)
 
 IF( tinyxml2_FOUND )
   SET( ALEPH_WITH_TINYXML2 TRUE )
